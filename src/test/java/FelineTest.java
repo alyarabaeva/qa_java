@@ -34,7 +34,7 @@ public class FelineTest {
     public void getFelineKittensCallMethodTest(){
         MockitoAnnotations.openMocks(this);
         Feline felineMock = Mockito.mock(Feline.class);
-        felineMock.getKittens(2);
+        felineMock.getKittens(5);
         Mockito.verify(felineMock).getKittens(Mockito.anyInt());
     }
 }
